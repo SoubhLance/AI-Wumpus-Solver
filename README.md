@@ -34,5 +34,7 @@ The agent uses:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/wumpus-ai.git
-   cd wumpus-ai
+   git clone https://github.com/your-username/ai-wumpus-solver.git
+   conda activate venv/
+   python wumpus.ipynb
+   
