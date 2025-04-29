@@ -1,40 +1,69 @@
-#This is an AI Problem Solver for Wumpus Problem
+# Hunt the Wumpus 🧟‍♂️🎯
 
-# 🧠 Wumpus World AI
+![WUM](https://github.com/user-attachments/assets/81ba8027-c71e-4385-905b-14d4ff301ad0)
 
-An intelligent agent that plays the classic **Wumpus World** game using Artificial Intelligence. The agent uses logic-based inference to navigate the cave, avoid pits and the Wumpus, and find the gold!
+This project is an implementation of the classic game **Hunt the Wumpus** using Python in a Jupyter Notebook.
 
-## 🚀 Features
+In this game, the player explores a cave consisting of connected rooms while trying to avoid hazards such as bottomless pits, super bats, and the Wumpus itself. The goal is to hunt and kill the Wumpus before it catches you!
 
-- ✅ Logic-based knowledge representation
-- ✅ Perception-based decision making (stench, breeze, glitter, bump, scream)
-- ✅ Safe path navigation
-- ✅ Wumpus and pit avoidance
-- ✅ Goal-seeking behavior (gold collection and escape)
+## Features
 
-## 🧩 Technologies Used
+- Text-based adventure gameplay
+- Randomized cave structure each game
+- Hazards like pits and bats
+- Shooting arrows to kill the Wumpus
+- Replayability with random events
 
-- Python 🐍
-- AI Search Algorithms (DFS, BFS, A*)
-- Propositional Logic / Inference Engine
-- Optional: Pygame for visualization
+## Installation
+1. **Clone the repository**:
 
-## 📁 Project Structure
+    ```bash
+    https://github.com/SoubhLance/AI-Wumpus-Solver.git
+    cd wumpus
+    ```
+
+2. **Install required dependencies** (if any):
+
+    > *Note*: If no external libraries are used other than standard Python ones, you can skip this step.
+
+    ```bash
+    pip install pygame
+    ```
+
+3. **Launch Jupyter Notebook**:
+
+    ```bash
+    jupyter notebook
+    ```
+
+4. Open `wumpus.ipynb` and run the cells to start playing!
+
+## How to Play
+
+- You start in a random cave room.
+- Each room may have connections to 1-3 other rooms.
+- You receive clues about nearby hazards (bats, pits, Wumpus).
+- You can:
+  - **Move** to an adjacent room
+  - **Shoot** an arrow into a room to try and kill the Wumpus
+- If you fall into a pit or encounter the Wumpus without killing it, the game ends.
 
 
-## 🧠 AI Logic
+## Future Improvements
 
-The agent uses:
+- Add a graphical interface using `tkinter` or `pygame`
+- Implement difficulty settings
+- Save/load game states
+- Add more random events or hazards
 
-- **Percept-based reasoning** to update its knowledge base.
-- **Forward chaining** to infer safe/unvisited cells.
-- **Search algorithms** to find optimal paths.
+## License
 
-## 🕹️ How to Run
+This project is licensed under the [MIT License](LICENSE).
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/ai-wumpus-solver.git
-   conda activate venv/
-   python wumpus.ipynb
-   
+---
+
+Feel free to fork the project, suggest improvements, or open issues if you encounter any bugs!
+
+---
+
+> Created with ❤️ and ⚡️
